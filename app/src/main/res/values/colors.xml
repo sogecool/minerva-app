@@ -11,6 +11,7 @@
 
 
 
+
     <!--IMC App-->
     <color name="background_component">#1D1E33</color>
     <color name="background_component_selected">#FF111328</color>
@@ -18,6 +19,8 @@
     <color name="background_button">#EB1555</color>
     <color name="title_text">#FF8D8E98</color>
     <color name="background_fab">#FF6200EE</color>
+    <color name="background_menu">#5B74F3</color>
+
 
     <color name="peso_bajo">#FFEB3B</color>
     <color name="peso_normal">#4CAF50</color>
@@ -37,6 +40,7 @@
 
     <!--    SuperheroApp-->
     <color name="superhero_item_name">#8B673AB7</color>
+    <color name="superhero_cardbackground">#E4556AE4</color>
 
     <color name="superhero_stat_intelligence">#00ff00</color>
     <color name="superhero_stat_strength">#FF0000</color>

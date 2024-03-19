@@ -3,12 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
+    android:layout_margin="20dp"
     android:orientation="vertical"
     tools:context=".MenuActivity">
 
     <Button
         android:id="@+id/btnHelloApp"
+        android:textSize="18sp"
+        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
@@ -16,6 +18,8 @@
 
     <Button
         android:id="@+id/btnIMCApp"
+        android:textSize="18sp"
+        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
@@ -23,6 +27,8 @@
 
     <Button
         android:id="@+id/btnTODO"
+        android:textSize="18sp"
+        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
@@ -30,6 +36,8 @@
 
     <Button
         android:id="@+id/btnSuperHeroApp"
+        android:textSize="18sp"
+        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/white"

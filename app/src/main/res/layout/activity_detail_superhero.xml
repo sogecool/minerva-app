@@ -9,16 +9,17 @@
     <ImageView
         android:id="@+id/ivSuperhero"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="470dp"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="420dp"
         android:elevation="8dp"
         app:cardCornerRadius="42dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,6 +30,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/superhero_cardbackground"
             android:orientation="vertical">
 
             <TextView
@@ -36,9 +38,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="Hola"
+                android:text="Searching"
                 android:textColor="@color/black"
-                android:textSize="28sp"
+                android:textSize="35sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -46,9 +48,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="Hola"
-                android:textSize="18dp"
+                android:text="Searching"
                 android:textColor="@color/black"
+                android:textSize="23dp"
                 android:textStyle="italic" />
 
             <TextView
@@ -56,14 +58,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="Hola"
-                android:textSize="12dp" />
+                android:text="Searching"
+                android:textSize="12dp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:layout_marginTop="24dp"
                 android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="24dp"
                 android:gravity="bottom"
                 android:orientation="horizontal">
 
@@ -71,49 +74,49 @@
                     android:id="@+id/viewIntelligence"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:background="@color/superhero_stat_intelligence"
                     android:layout_marginHorizontal="4dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:background="@color/superhero_stat_intelligence" />
 
                 <View
                     android:id="@+id/viewStrength"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:background="@color/superhero_stat_strength"
                     android:layout_marginHorizontal="4dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:background="@color/superhero_stat_strength" />
 
                 <View
                     android:id="@+id/viewSpeed"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:background="@color/superhero_stat_speed"
                     android:layout_marginHorizontal="4dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:background="@color/superhero_stat_speed" />
 
                 <View
                     android:id="@+id/viewDurability"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:background="@color/superhero_stat_durability"
                     android:layout_marginHorizontal="4dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:background="@color/superhero_stat_durability" />
 
                 <View
                     android:id="@+id/viewPower"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:background="@color/superhero_stat_power"
                     android:layout_marginHorizontal="4dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:background="@color/superhero_stat_power" />
 
                 <View
                     android:id="@+id/viewCombat"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:background="@color/superhero_stat_combat"
                     android:layout_marginHorizontal="4dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:background="@color/superhero_stat_combat" />
 
             </LinearLayout>
 
@@ -121,69 +124,81 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="16dp"
-                android:gravity="bottom"
                 android:layout_marginTop="4dp"
+                android:gravity="bottom"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="4dp"
-                    android:singleLine="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:maxLines="1"
+                    android:singleLine="true"
                     android:text="Intelligence"
                     android:textSize="10sp"
-                    android:layout_weight="1"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="0dp"
-                    android:text="Strength"
                     android:layout_height="wrap_content"
-                    android:textSize="10sp"
-                    android:singleLine="true"
-                    android:maxLines="1"
                     android:layout_marginHorizontal="4dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Strength"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
                     android:text="Speed"
                     android:textSize="10sp"
-                    android:singleLine="true"
-                    android:maxLines="1"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="4dp"
-                    android:layout_weight="1"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
                     android:text="Durability"
-                    android:singleLine="true"
-                    android:maxLines="1"
-                    android:layout_height="wrap_content"
                     android:textSize="10sp"
-                    android:layout_marginHorizontal="4dp"
-                    android:layout_weight="1"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="4dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
                     android:text="Power"
-                    android:layout_height="wrap_content"
                     android:textSize="10sp"
-                    android:singleLine="true"
-                    android:maxLines="1"
-                    android:layout_marginHorizontal="4dp"
-                    android:layout_weight="1"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="0dp"
-                    android:text="Combat"
                     android:layout_height="wrap_content"
-                    android:textSize="10sp"
-                    android:singleLine="true"
-                    android:maxLines="1"
                     android:layout_marginHorizontal="4dp"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Combat"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
