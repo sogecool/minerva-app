@@ -4,9 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import minervapg.project.R.id
-import minervapg.project.R.layout
+import minervapg.project.R.*
 import minervapg.project.imc_calculator.ImcCalculatorActivity
+import minervapg.project.settings.SettingsActivity
 import minervapg.project.superheroapp.SuperHeroListActivity
 import minervapg.project.todoapp.TodoActivity
 
@@ -19,12 +19,19 @@ class MenuActivity : AppCompatActivity() {
         val btnImcApp = findViewById<Button>(id.btnIMCApp)
         val btnTODO = findViewById<Button>(id.btnTODO)
         val btnSuperHeroApp = findViewById<Button>(id.btnSuperHeroApp)
+        val btnSettings = findViewById<Button>(id.btnSettings)
 
         btnHelloApp.setOnClickListener { navigateToHelloApp() }
         btnImcApp.setOnClickListener { navigateToImcApp() }
         btnTODO.setOnClickListener { navigateTODOApp() }
         btnSuperHeroApp.setOnClickListener { navigateToSuperHeroApp() }
+        btnSettings.setOnClickListener { navigateToSettings() }
 
+    }
+
+    private fun navigateToSettings() {
+        val intent = Intent(this, SettingsActivity::class.java)
+        startActivity(intent)
     }
 
     private fun navigateToSuperHeroApp(){
