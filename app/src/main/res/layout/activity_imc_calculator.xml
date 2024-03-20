@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/background_app"
     android:paddingHorizontal="16dp"
-    android:paddingVertical="32dp"
+    android:paddingVertical="25dp"
     tools:context=".imc_calculator.ImcCalculatorActivity">
 
     <androidx.cardview.widget.CardView
@@ -258,7 +258,6 @@
         android:text="@string/calculate"
         android:textColor="@color/white"
         android:textSize="20dp"
-        android:layout_marginBottom="40dp"
         android:textStyle="bold"
         app:backgroundTint="@color/purple_500"
         app:layout_constraintBottom_toBottomOf="parent"
