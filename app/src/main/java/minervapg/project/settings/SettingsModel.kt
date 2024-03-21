@@ -1,0 +1,8 @@
+package minervapg.project.settings
+
+class SettingsModel(
+    var volume: Int,
+    var bluetooth: Boolean,
+    var vibration: Boolean,
+    var darkMode: Boolean
+)
